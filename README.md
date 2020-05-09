@@ -1,2 +1,2 @@
 # MyWebsite
-<a href="/home">Home</a>
+<a href="https://brendansd3.github.io/home.html">Home</a>
