@@ -44,19 +44,7 @@
 
     <div ng-view></div>
 
-    <script>
-        var app = angular.module("myApp", ["ngRoute"]);
-        app.config(function($routeProvider) {
-            $routeProvider
-                .when("/", {
-                    templateUrl: "Home.html"
-                })
-                .when("/CV", {
-                    templateUrl: "My_CV.html"
 
-                });
-        });
-    </script>
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -209,6 +197,19 @@
         <p>Powered by Github Pages</p>
     </footer>
 
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    templateUrl: "Home.html"
+                })
+                .when("/CV", {
+                    templateUrl: "My_CV.html"
+
+                });
+        });
+    </script>
 </body>
 
 </html>
