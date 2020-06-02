@@ -21,7 +21,7 @@
     }
 </style>
 
-<body ng-app class="w3-light-grey">
+<body class="w3-light-grey">
 
 
     <!-- Page Container -->
@@ -177,21 +177,6 @@
     </footer>
 
 
-    <div ng-view></div>
-
-    <script>
-        var app = angular.module("myApp", ["ngRoute"]);
-        app.config(function($routeProvider) {
-            $routeProvider
-                .when("/", {
-                    templateUrl: "main.html"
-                })
-                .when("/CV", {
-                    templateUrl: "My_CV.html"
-
-                });
-        });
-    </script>
 </body>
 
 </html>
