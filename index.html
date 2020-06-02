@@ -8,8 +8,7 @@
     <p><a href="#/!">Main</a></p>
 
     <a href="#!red">Red</a>
-    <a href="#!green">Green</a>
-    <a href="#!blue">Blue</a>
+
 
     <div ng-view></div>
 
@@ -18,16 +17,11 @@
         app.config(function($routeProvider) {
             $routeProvider
                 .when("/", {
-                    templateUrl: "main.htm"
+                    templateUrl: "main.html"
                 })
                 .when("/red", {
-                    templateUrl: "red.htm"
-                })
-                .when("/green", {
-                    templateUrl: "green.htm"
-                })
-                .when("/blue", {
-                    templateUrl: "blue.htm"
+                    templateUrl: "red.html"
+
                 });
         });
     </script>
