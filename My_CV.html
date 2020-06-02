@@ -6,8 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
 <style>
     html,
     body,
@@ -21,7 +20,7 @@
     }
 </style>
 
-<body class="w3-light-grey" ng-app="myApp">
+<body class="w3-light-grey">
 
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -168,26 +167,6 @@
         <!-- End Page Container -->
     </div>
 
-
-
-    <p><a href="#/!">Main</a></p>
-
-    <a href="#!red">Red</a>
-
-    <div ng-view> </div>
-    <script>
-        var app = angular.module("myApp", ["ngRoute"]);
-        app.config(function($routeProvider) {
-            $routeProvider
-                .when("/", {
-                    templateUrl: "My_CV.html"
-                })
-                .when("/red", {
-                    templateUrl: "index.html"
-
-                });
-        });
-    </script>
     <footer class="w3-container w3-teal w3-center w3-margin-top">
         <p><a href="https://www.linkedin.com/in/brendan-wall-861235194/">Find me on LinkedIn.<i class="fa fa-linkedin w3-hover-opacity"></i></a></p>
         <p>Have a look at some of my solutions on Hacker Rank <a href="https://www.hackerrank.com/brendan_wall03">Here</a></p>
