@@ -1,177 +1,60 @@
-<h1>Main Page</h1>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-<style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif
-    }
-</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-<body class="w3-light-grey">
+<body ng-app="myApp">
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#/!">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!CV">My CV</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://brendansd3.github.io/react-tutorial/">React</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Java</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Python </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PHP</a>
+            </li>
+
+        </ul>
+
+    </nav>
 
 
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <div ng-view></div>
 
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-
-            <!-- Left Column -->
-            <div class="w3-third">
-
-                <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
-                        <img src="/Images/Picture_at_Home.jpg" style="width:100%" alt="me">
-                        <div class="w3-display-bottomleft w3-container w3-text-white">
-                            <h2>Brendan Wall</h2>
-                        </div>
-                    </div>
-                    <div class="w3-container">
-                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kerry, Ireland</p>
-                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>brendan.wall03@gmail.com</p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Email me for contact info</p>
-                        <hr>
-
-                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-                        <p>Python</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-                        </div>
-                        <p>Java</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-                                <div class="w3-center w3-text-white">80%</div>
-                            </div>
-                        </div>
-                        <p>SQL</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-                        </div>
-                        <p>C#</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-                        </div>
-                        <br>
-
-                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Other Skills</b></p>
-                        <p>Machine Learning</p>
-
-                        <p>Data visualisation</p>
-
-                        <p>Group Projects</p>
-
-                        <br>
-                    </div>
-                </div><br>
-
-                <!-- End Left Column -->
-            </div>
-
-            <!-- Right Column -->
-            <div class="w3-twothird">
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Junior ATS Developer / Kemp Technologies</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 - September 2019</h6>
-                        <p>As part of the ATS(Automated Tools and Support) team, i was tasked with updating the customer support website. The website used the django web framework which utilised python in the backend with angularJS front-end.</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Bike Mechanic/Car washer/Web Developer / Lynes Rent a bike </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-                        <p>I worked in a busy start up where I rented bikes, washed cars and I created a webiste for bike rental which increased the volumne of customers hugely. </p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Life Guard / Activity leader / YMCA Trout Lodge</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-                        <p>Worked as a lifeguard and program leader for a campsite in Missouri USA. </p><br>
-                    </div>
-                </div>
-
-                <div class="w3-container w3-card w3-white">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Limerick Institute of Technology</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016-2020</h6>
-                        <p>Bachelors Degree in Software Development </p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>LinkedIn Learning</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Multiple Courses throughout college</h6>
-                        <p></p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Killarney Community College</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2015</h6>
-                        <p></p><br>
-                    </div>
-                </div>
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Final Year Project</b></h5>
-                        <p>Sketch to Code </p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Spring Rest API </b></h5>
-                        <p></p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Jupyter Notebook Data Visualisation </b></h5>
-                        <p></p>
-                        <hr>
-                    </div>
-
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>React CRUD App </b></h5>
-                        <p>The App is now published on my github pages <a href="https://brendansd3.github.io/react-tutorial/index.html">Click here to use it</a> React is a front end technology that is great for user interfaces and it is very quick to develop
-                            with. Unlike Angular however it is not a framework.</p>
-                        <p>Link to blog where I found tutorial. <a href="https://www.taniarascia.com/getting-started-with-react/">Blog by Tania Rascia, Great tutorial for getting started </a> </p>
-
-                        <hr>
-                    </div>
-
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>MongoDB Tutorial MonogoDB University </b></h5>
-                        <p></p>
-                        <hr>
-                    </div>
-
-                </div>
-                <!-- End Right Column -->
-            </div>
-
-            <!-- End Grid -->
-        </div>
-
-        <!-- End Page Container -->
-    </div>
-
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <p><a href="https://www.linkedin.com/in/brendan-wall-861235194/">Find me on LinkedIn.<i class="fa fa-linkedin w3-hover-opacity"></i></a></p>
-        <p>Have a look at some of my solutions on Hacker Rank <a href="https://www.hackerrank.com/brendan_wall03">Here</a></p>
-
-        <p>Powered by Github Pages</p>
-    </footer>
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    templateUrl: "red.html"
+                })
+                .when("/PHP", {
+                    templateUrl: "Home.html"
+                })
+                .when("/CV", {
+                    templateUrl: "My_CV.html"
+                });
+        });
+    </script>
 
 
 </body>
+
+</html>
