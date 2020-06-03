@@ -16,7 +16,7 @@
                 <a class="nav-link" href="#/!">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#!red">My CV</a>
+                <a class="nav-link" href="#!CV">My CV</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">React</a>
@@ -43,10 +43,10 @@
         app.config(function($routeProvider) {
             $routeProvider
                 .when("/", {
-                    templateUrl: "main.html"
-                })
-                .when("/red", {
                     templateUrl: "red.html"
+                })
+                .when("/CV", {
+                    templateUrl: "main.html"
                 });
         });
     </script>
