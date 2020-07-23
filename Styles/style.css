@@ -12,9 +12,9 @@ html {
 body {
     height: calc(100vh - 8em);
     padding: 4em;
-    color: white;
+    color: black;
     font-family: 'Anonymous Pro', monospace;
-    background-color: rgb(25, 25, 25);
+    background-color: white;
 }
 
 .line-1 {
