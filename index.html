@@ -194,6 +194,11 @@
         .position-ref {
             position: relative;
         }
+        
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
     </style>
     <script>
         function openCity(evt, cityName) {
@@ -244,6 +249,11 @@
         }
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
+
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
     </script>
 </head>
 
@@ -286,8 +296,8 @@
                 <p class="line-1 anim-typewriter1">Welcome to my website</p>
             </div>
             <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                <input type="checkbox" onclick="myFunction()" class="custom-control-input" id="customSwitch1" checked>
+                <label class="custom-control-label" for="customSwitch1">Toggle Dark Mode</label>
             </div>
             <div class="links">
                 <a class="link" id="CVLink" href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
