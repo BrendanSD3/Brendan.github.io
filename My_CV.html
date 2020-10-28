@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html >
+<html ng-app="myApp">
 <title>CV</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +29,7 @@
 
 <body class="w3-light-grey">
 
-
+    <h2>{{ title }}</h2>
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -139,7 +139,7 @@
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Final Year Project</b></h5>
                         <p>Sketch to Code </p>
-                        <a href="#" >More info</a>
+                        <button ng-click="showmore()" class="btn btn-primary" id="showmore">More info>></a>
                         <hr>
                     </div>
                     <div class="w3-container">
