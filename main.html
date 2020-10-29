@@ -52,6 +52,10 @@
 
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
+        myApp.controller("myController",function($scope,$http){
+            $scope.title="My_CV";
+        });
+        
         app.config(function($routeProvider) {
             $routeProvider
                 .when("/", {
@@ -61,7 +65,9 @@
                     templateUrl: "Home.html"
                 })
                 .when("/CV", {
-                    templateUrl: "My_CV.html"
+                   
+                    templateUrl: "My_CV.html" ,
+                   
                 });
         });
     </script>
