@@ -41,6 +41,7 @@ body {
     animation: typewriter 5s steps(50) 1s 1 normal both, blinkTextCursor 500ms steps(50) 5s normal;
 }
 
+
 @keyframes typewriter {
     from {
         width: 0;
@@ -52,9 +53,9 @@ body {
 
 @keyframes blinkTextCursor {
     from {
-        border-right-color: rgba(255, 255, 255, .75);
+          border-right-color:transparent;
     }
     to {
-        opacity:0;
+   border-right-color: rgba(255, 255, 255, .75);   
     }
 }
