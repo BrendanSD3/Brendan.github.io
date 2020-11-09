@@ -53,23 +53,27 @@
 
     <script>
         var app = angular.module("myApp", ["ngRoute"]);
-       
-        
+
+
         app.config(function($routeProvider) {
             $routeProvider
                 .when("/", {
                     templateUrl: "index.html"
                 })
                 .when("/PHP", {
-                    templateUrl: "Home.html"
+                    templateUrl: "Home.html",
+                    controller: "phpctrl"
                 })
                 .when("/CV", {
-                   templateUrl: "My_CV.html",
-                   controller:"cvCtrl" 
+                    templateUrl: "My_CV.html",
+                    controller: "cvCtrl"
                 });
         });
-        app.controller("cvCtrl",function($scope){
-            $scope.title="MYCV!";
+        app.controller("cvCtrl", function($scope) {
+            $scope.title = "Welcome to my CV!";
+        });
+        app.controller("phpCtrl", function($scope) {
+            $scope.title = "Welcome to my CV!";
         });
     </script>
 
