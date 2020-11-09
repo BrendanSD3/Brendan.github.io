@@ -25,6 +25,16 @@
     a {
         color: lightskyblue;
     }
+    .projdiv {
+        transition: all linear 0.5s;
+        background-color: lightblue;
+        height: 100px;
+      }
+      
+      .ng-hide {
+        height: 0;
+      }
+
 </style>
 
 <body class="w3-light-grey">
@@ -127,19 +137,15 @@
                         <p></p>
                         <hr>
                     </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Killarney Community College</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2015</h6>
-                        <p></p><br>
-                    </div>
+                  
                 </div>
                 <br>
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <div class="w3-container w3-card w3-white w3-margin-bottom projdiv" ng-hide="showmore">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Final Year Project</b></h5>
                         <p>Sketch to Code </p>
-                        <button ng-click="showmore()" class="btn btn-primary" id="showmore">More info>></button>
+                        <button ng-click="showmore()" class="btn btn-primary" id="showmore" ng-model="showmore">More info>></button>
                         <hr>
                     </div>
                     <div class="w3-container">
