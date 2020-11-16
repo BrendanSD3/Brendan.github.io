@@ -13,23 +13,46 @@
         background-color: #4CAF50;
         color: white;
     }
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color:#1aaa;
+        color: white;
+      }
+      
+      .topnav a.active {
+        background-color: #1aaa;
+        color: white;
+      }
 </style>
 <script>
     
-    $(function() {
+  /*  $(function() {
         $("li").click(function() {
             // remove classes from all
             $("li").removeClass("active");
             // add class to the one we clicked
             $(this).addClass("active");
         });
-    });
+    }); */       
 </script>
 
 <body ng-app="myApp">
-    <nav class="navbar navbar-expand-sm bg-light">
+    <!-- <nav id="navbar"class="navbar navbar-expand-sm bg-light">
 
-        <!-- Links -->
+       
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" id="HomeLink" href="https://brendansd3.github.io">Home</a>
@@ -47,8 +70,13 @@
 
         </ul>
 
-    </nav>
-
+    </nav> -->
+    <div class="topnav">
+        <a class="active" id="HomeLink" href="https://brendansd3.github.io">Home</a>
+        <a href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
+        <a href="https://brendansd3.github.io/react-tutorial/">React</a>
+        <a href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Formula 1 API with Angular JS</a>
+      </div>
 
     <div ng-view></div>
 
