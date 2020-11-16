@@ -46,10 +46,14 @@
         <a class="active" href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
         <a href="https://brendansd3.github.io/react-tutorial/">React</a>
         <a href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Formula 1 API with Angular JS</a>
-        <div class="float-right custom-control custom-switch">
+        <!-- <div class="float-right custom-control custom-switch"> -->
+        <div class="float-right" style="margin-right:12px;">
+           <a>Toggle Dark Mode</a>
+            <label class="switch" for="customSwitch1" style="color:white;">
             <input type="checkbox" onclick="myFunction()" class="custom-control-input" id="customSwitch1" >
-            <label class="custom-control-label" for="customSwitch1">Toggle Dark Mode</label>
-        </div>
+            <span class="slider round"></span>
+            </label>
+        </div> 
       </div>
 
     <div ng-view></div>
