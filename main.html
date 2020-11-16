@@ -9,7 +9,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="Scripts/Script.js"></script>
 <link rel="stylesheet" href="Styles/Navstyle.css">
-
+<link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/indexstyle.css">
+<script>
+    
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
 
 <body ng-app="myApp">
     <!-- <nav id="navbar"class="navbar navbar-expand-sm bg-light">
@@ -38,6 +46,10 @@
         <a class="active" href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
         <a href="https://brendansd3.github.io/react-tutorial/">React</a>
         <a href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Formula 1 API with Angular JS</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" onclick="myFunction()" class="custom-control-input" id="customSwitch1" >
+            <label class="custom-control-label" for="customSwitch1">Toggle Dark Mode</label>
+        </div>
       </div>
 
     <div ng-view></div>
