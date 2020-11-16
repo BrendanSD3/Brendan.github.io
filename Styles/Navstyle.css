@@ -86,11 +86,11 @@
     border-radius: 50%;
   }
 
-  .w3white{
+  .white{
     color:#000;
     background-color:#fff;
   }
-  .w3dark{
+  .dark{
     color:white;
     background-color:black;
   }
