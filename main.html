@@ -12,7 +12,12 @@
 
     <link rel="stylesheet" href="Styles/indexstyle.css">
 <script>
-  
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        $('.cards').removeClass('.w3white').addClass('.w3dark');
+    
+    }
 </script>
 
 <body ng-app="myApp">

@@ -36,7 +36,14 @@
       }
 
 </style>
-
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        $('.cards').removeClass('.w3white').addClass('.w3dark');
+    
+    }
+</script>
 <body class="w3-light-grey">
 
     <h2>{{ title }}</h2>
@@ -49,7 +56,7 @@
             <!-- Left Column -->
             <div class="w3-third">
 
-                <div class="cards w3-white w3-text-grey w3-card-4 w3-margin-bottom">
+                <div class="cards w3white w3-text-grey w3-card-4 w3-margin-bottom">
                     <div class="w3-display-container w3-margin-bottom">
                         <img src="/Images/Picture_at_Home.jpg" class="amimate__animated animate__fadeIn" style="width:100%" alt="me">
                         <div class="w3-display-bottomleft w3-container w3-text-white">
@@ -102,7 +109,7 @@
             <!-- Right Column -->
             <div class="w3-twothird">
 
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <div class="w3-container w3-card w3white w3-margin-bottom">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Junior ATS Developer / Kemp Technologies</b></h5>
@@ -140,7 +147,7 @@
                   
                 </div>
                 <br>
-                <div class="w3-container w3-card w3-white w3-margin-bottom projdiv" ng-hide="showmore">
+                <div class="w3-container w3-card w3white w3-margin-bottom projdiv" ng-hide="showmore">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Final Year Project</b></h5>

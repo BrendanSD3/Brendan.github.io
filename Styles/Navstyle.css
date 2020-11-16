@@ -85,3 +85,12 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .w3white{
+    color:#000;
+    background-color:#fff;
+  }
+  .w3dark{
+    color:white;
+    background-color:black;
+  }
