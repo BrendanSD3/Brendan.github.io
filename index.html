@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/indexstyle.css">
-
+    <link rel="stylesheet" href="Styles/Navstyle.css">
     <style>
        
     </style>
@@ -24,12 +24,26 @@
             var element = document.body;
             element.classList.toggle("dark-mode");
         }
+            
+  $(function() {
+    $("a").click(function() {
+        // remove classes from all
+        $("a").removeClass("active");
+        // add class to the one we clicked
+        $(this).addClass("active");
+    });
+}); 
     </script>
 </head>
 
 
 <body>
- 
+    <div class="topnav">
+        <a class="active" id="HomeLink" href="https://brendansd3.github.io">Home</a>
+        <a href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
+        <a href="https://brendansd3.github.io/react-tutorial/">React</a>
+        <a href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Formula 1 API with Angular JS</a>
+      </div>
   
     <div class="flex-center position-ref full-height">
         <div class="content">
@@ -43,10 +57,10 @@
                 <label class="custom-control-label" for="customSwitch1">Toggle Dark Mode</label>
             </div>
             <br>
-            <div class="links">
+            <!-- <div class="links">
                 <a class="link" id="CVLink" href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
                 <a class="link" href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Formula 1 API using AngularJS</a>
-            </div>
+            </div> -->
         </div>
     </div>
 
