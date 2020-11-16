@@ -10,20 +10,6 @@
 <script src="Scripts/Script.js"></script>
 <link rel="stylesheet" href="Styles/Navstyle.css">
 
-<style>
-   
-</style>
-<script>
-    
-  $(function() {
-        $("a").click(function() {
-            // remove classes from all
-            $("a").removeClass("active");
-            // add class to the one we clicked
-            $(this).addClass("active");
-        });
-    }); 
-</script>
 
 <body ng-app="myApp">
     <!-- <nav id="navbar"class="navbar navbar-expand-sm bg-light">
@@ -48,8 +34,8 @@
 
     </nav> -->
     <div class="topnav">
-        <a class="active" id="HomeLink" href="https://brendansd3.github.io">Home</a>
-        <a href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
+        <a id="HomeLink" href="https://brendansd3.github.io">Home</a>
+        <a class="active" href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
         <a href="https://brendansd3.github.io/react-tutorial/">React</a>
         <a href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Formula 1 API with Angular JS</a>
       </div>
