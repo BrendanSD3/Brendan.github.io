@@ -145,8 +145,38 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>LinkedIn Learning</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Multiple Courses throughout college</h6>
-                        <p></p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            View my courses and Certs from linkedIn
+                          </button>
+                       <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <p>Networking Foundations</p>   
+         <img src="Images/courseCerts/CertificateOfCompletion_Networking Foundations Networking Basics.pdf">
+         <p>FullStack MERN (MongoDB,Express,React,NodeJS)</p>
+         <img src="Images/courseCerts/CertificateOfCompletion_Learning FullStack JavaScript Development MongoDB Node and React.pdf">
+         <p>Deep Learning for Image Recognition</p>
+         <img src="Images/courseCerts/CertificateOfCompletion_Deep Learning Image Recognition.pdf">
+         <p>Angular ASP.NET API</p>
+         <img src="Images/courseCerts/CertificateOfCompletion_Building Angular and ASP.NET Web API Apps.pdf">
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
                         <hr>
                     </div>
                   
@@ -165,7 +195,7 @@
                          <header class="w3-container w3-blue"> 
                           <span onclick="document.getElementById('id01').style.display='none'" 
                           class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-                          <h2>Header</h2>
+                          <h2>My FYP 2020</h2>
                          </header>
                     <div class="w3-bar w3-border-bottom">
                         <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Idea')">Idea</button>
@@ -183,16 +213,17 @@
                        <div id="Tech" class="w3-container Proj">
                         <h1>Tech</h1>
                         <p>The tech used in this project took lots of trial and error,</p>
-                        <p>Eventually i got it to work by using Google Colab to train a custom machine learning model</p>
-                        <p>I made my own database of images to train this model as I could not find any online.</p>
-                        <p>To allow a user to use this project i made a website using the python Django framework, 
-                            I added some features to the website to allow the user to edit the generated html code by dragging and dropping elements. 
+                        <p>Eventually I got it to work by using <b>Google Colab </b> to train a custom machine learning model</p>
+                        <p>I used the <b>YoloV3</b> (You Only Look Once) object detection neural netowrk for trinaing the machine learning model, this is open source and is state of the art for speed </p>
+                        <p>I made my own database of 80 images to train this model as I could not find any online.</p>
+                        <p>To allow a user to use this project I made a website using the <b>Python Django framework</b>, 
+                            I added some features using <b>Javascript and JQuery</b> to the website to allow the user to edit the generated html code by dragging and dropping elements. 
                         </p>
                        </div>
                      
                        <div id="Result" class="w3-container Proj">
                         <h1>Result</h1>
-                        <p>Overall the project was a succes, the only issue being that the user needs to follow a guide to draw the elements otherwise they wont be recognised and wont be translated to code. </p><br>
+                        <p>Overall the project was a succes, It was able to predict <b>10 html elements with 90% accuracy</b>, the only issue being that the user needs to follow a guide to draw the elements otherwise they wont be recognised and wont be translated to code. </p><br>
                         <img src="Images/FYP/input99.jpg" alt="this is the input image" class="float-left">
                         <img src="Images/FYP/predictions99.jpg" alt="this is the resulting predictions" class="float-right">
                     </div>
