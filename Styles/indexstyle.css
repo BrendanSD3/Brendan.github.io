@@ -111,7 +111,7 @@ body {
     position: relative;
 }
 
-.dark-mode {
+.dark-mode, .cards{
     background-color: black;
     color: white;
 }
