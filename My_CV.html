@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-
+<script src="Scripts/Script.js"></script>
 
 <link rel="stylesheet" href="Styles/Navstyle.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -42,9 +42,26 @@
     margin-top: 20px;
     display:none;
 }
+.Proj{
+    display:none;
+}
 </style>
 <script>
-  
+    document.getElementsByClassName("tablink")[0].click();
+
+    function openCity(evt, cityName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("Proj");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].classList.remove("w3-light-grey");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.classList.add("w3-light-grey");
+    }
 </script>
 <body class="w3-light-grey">
 
@@ -113,19 +130,19 @@
 
                 <div class="w3-container w3-card cards white w3-margin-bottom ">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-                    <div class="w3-container w3-animate-left">
+                    <div class="w3-container">
                         <h5 class="w3-opacity"><b>Junior ATS Developer / Kemp Technologies</b></h5>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 - September 2019</h6>
                         <p>As part of the ATS(Automated Tools and Support) team, i was tasked with updating the Internal customer support tools website. The website used the django web framework which utilised python in the backend with angularJS front-end.</p>
                         <hr>
                     </div>
-                    <div class="w3-container w3-animate-left">
+                    <div class="w3-container">
                         <h5 class="w3-opacity"><b>Bike Mechanic/Car washer/Web Developer / Lynes Rent a bike </b></h5>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
                         <p>I worked in a busy start up where I rented bikes, washed cars and I created a webiste for bike rental which increased the volumne of customers hugely. </p>
                         <hr>
                     </div>
-                    <div class="w3-container w3-animate-left">
+                    <div class="w3-container">
                         <h5 class="w3-opacity"><b>Life Guard / Activity leader / YMCA Trout Lodge</b></h5>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
                         <p>Worked as a lifeguard and program leader for a campsite in Missouri USA. </p><br>
@@ -154,13 +171,45 @@
                     <div class="w3-container projdiv">
                         <h5 class="w3-opacity"><b>Final Year Project</b></h5>
                         <p>Sketch to Code </p>
-                        <button class="btn btn-primary" onclick="show();" id="showmore" >Click here to see an overview</button>
+                        <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Click here to see an overview</button>
                         <hr>
                     </div>
-                    <div class="w3-container w3-animate-right" id="project">
-                        <p>Something here this should show when button is clicked</p>
-                    </div>
-                    <div class="w3-container">
+                   
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                         <header class="w3-container w3-blue"> 
+                          <span onclick="document.getElementById('id01').style.display='none'" 
+                          class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+                          <h2>Header</h2>
+                         </header>
+                       
+                         <div class="w3-bar w3-border-bottom">
+                          <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Idea')">Idea</button>
+                          <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tech')">Tech</button>
+                          <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Result')">Result</button>
+                         </div>
+                       
+                    <div id="Idea" class="w3-container proj">
+                        <h1>Idea</h1>
+                        <p>Idea is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                       </div>
+                     
+                       <div id="Tech" class="w3-container Proj">
+                        <h1>Tech</h1>
+                        <p>Tech is the capital of France.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                       </div>
+                     
+                       <div id="Result" class="w3-container Proj">
+                        <h1>Result</h1>
+                        <p>Result is the capital of Japan.</p><br>
+                       </div>
+                    
+                    
+                    
+                    
+                       <div class="w3-container">
                         <h5 class="w3-opacity"><b>Spring Rest API </b></h5>
                         <ul><b>Cool things about this project:</b>
                             <li>QR code for each brewery company</li>
@@ -212,5 +261,5 @@
 
 
 </body>
-<script src="Scripts/Script.js"></script>
+
 </html>
