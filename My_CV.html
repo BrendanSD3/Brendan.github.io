@@ -35,10 +35,22 @@
       .ng-hide {
         height: 0;
       }
-
+#project{
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    display:none;
+}
 </style>
 <script>
-    
+    function show() {
+        var x = document.getElementById("project");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
 </script>
 <body class="w3-light-grey">
 
@@ -143,14 +155,15 @@
                   
                 </div>
                 <br>
-                <div class="w3-container w3-card cards white w3-margin-bottom projdiv" ng-hide="showmore">
+                <div class="w3-container w3-card cards white w3-margin-bottom ">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-                    <div class="w3-container">
+                    <div class="w3-container projdiv">
                         <h5 class="w3-opacity"><b>Final Year Project</b></h5>
                         <p>Sketch to Code </p>
-                        <button ng-click="showmore()" class="btn btn-primary" id="showmore" ng-model="showmore">More info>></button>
+                        <button class="btn btn-primary" onclick="show" id="showmore" >Click here to see an overview</button>
                         <hr>
                     </div>
+                    <div class="w3-container " id="project">Something here this should show when button is clicked</div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Spring Rest API </b></h5>
                         <ul><b>Cool things about this project:</b>
