@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
 <script src="Scripts/Script.js"></script>
 <link rel="stylesheet" href="Styles/Navstyle.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -43,14 +44,7 @@
 }
 </style>
 <script>
-    function show() {
-        var x = document.getElementById("project");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
+  
 </script>
 <body class="w3-light-grey">
 
@@ -64,15 +58,15 @@
             <!-- Left Column -->
             <div class="w3-third">
 
-                <div class="cards white w3-text-grey w3-card-4 w3-margin-bottom">
-                    <div class="w3-display-container w3-margin-bottom">
+                <div class="cards white w3-text-grey w3-card-4 w3-margin-bottom ">
+                    <div class="w3-display-container w3-margin-bottom ">
                         <img src="/Images/Picture_at_Home.jpg" class="amimate__animated animate__fadeIn" style="width:100%" alt="me">
                         <div class="w3-display-bottomleft w3-container w3-text-white">
                             <h2>Brendan Wall</h2>
                         </div>
                     </div>
 
-                    <div class="w3-container">
+                    <div class="w3-container  ">
                         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer</p>
                         <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kerry, Ireland</p>
                         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>brendan.wall03@gmail.com</p>
@@ -117,7 +111,7 @@
             <!-- Right Column -->
             <div class="w3-twothird">
 
-                <div class="w3-container w3-card cards white w3-margin-bottom">
+                <div class="w3-container w3-card cards white w3-margin-bottom w3-animate-top">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Junior ATS Developer / Kemp Technologies</b></h5>
@@ -138,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="w3-container w3-card cards white w3-margin-bottom">
+                <div class="w3-container w3-card cards white w3-margin-bottom w3-animate-top">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Limerick Institute of Technology</b></h5>
@@ -155,15 +149,17 @@
                   
                 </div>
                 <br>
-                <div class="w3-container w3-card cards white w3-margin-bottom ">
+                <div class="w3-container w3-card cards white w3-margin-bottom w3-animate-top">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
                     <div class="w3-container projdiv">
                         <h5 class="w3-opacity"><b>Final Year Project</b></h5>
                         <p>Sketch to Code </p>
-                        <button class="btn btn-primary" onclick="show()" id="showmore" >Click here to see an overview</button>
+                        <button class="btn btn-primary" onclick="show();" id="showmore" >Click here to see an overview</button>
                         <hr>
                     </div>
-                    <div class="w3-container " id="project">Something here this should show when button is clicked</div>
+                    <div class="w3-container" id="project">
+                        <p>Something here this should show when button is clicked</p>
+                    </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Spring Rest API </b></h5>
                         <ul><b>Cool things about this project:</b>
