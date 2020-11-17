@@ -7,6 +7,7 @@ myApp.controller("myController",function($scope,$http){
  */
   
 function show() {
+    console.log("I got clicked");
     var x = document.getElementById("project");
     if (x.style.display === "none") {
       x.style.display = "block";
