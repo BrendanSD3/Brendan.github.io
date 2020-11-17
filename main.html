@@ -16,9 +16,10 @@
     function myFunction() {
         var element = document.body;
         element.classList.toggle("dark-mode");
-        $(".cards").remove(".white");
-        $(".cards").add(".dark");
-    
+        //var el = document.getElementsByClassName("cards");
+        $("cards").toggleClass("white"); //this goes off
+        $("cards").toggleClass("dark"); //this goes on 
+        
     }
 </script>
 
