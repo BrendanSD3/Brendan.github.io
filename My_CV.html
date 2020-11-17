@@ -160,7 +160,6 @@
                         <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Click here to see an overview</button>
                         <hr>
                     </div>
-                   
                     <div id="id01" class="w3-modal">
                         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
                          <header class="w3-container w3-blue"> 
@@ -168,32 +167,36 @@
                           class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
                           <h2>Header</h2>
                          </header>
-                       
-                         <div class="w3-bar w3-border-bottom">
-                          <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Idea')">Idea</button>
-                          <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tech')">Tech</button>
-                          <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Result')">Result</button>
-                         </div>
-                       
-                        <div id="Idea" class="w3-container proj">
+                    <div class="w3-bar w3-border-bottom">
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Idea')">Idea</button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tech')">Tech</button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Result')">Result</button>
+                       </div>
+                     
+                       <div id="Idea" class="w3-container Proj">
                         <h1>Idea</h1>
-                        <p>Idea is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+                        <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
+                       </div>
                      
                        <div id="Tech" class="w3-container Proj">
                         <h1>Tech</h1>
-                        <p>Tech is the capital of France.</p>
+                        <p>Paris is the capital of France.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                        </div>
                      
                        <div id="Result" class="w3-container Proj">
                         <h1>Result</h1>
-                        <p>Result is the capital of Japan.</p><br>
+                        <p>Tokyo is the capital of Japan.</p><br>
                        </div>
-                    
-                    </div>
-                </div>
+                     
+                       <div class="w3-container w3-light-grey w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border" 
+                        onclick="document.getElementById('id01').style.display='none'">Close</button>
+                       </div>
+                      </div>
+                     </div>
+               
                     
                        <div class="w3-container">
                         <h5 class="w3-opacity"><b>Spring Rest API </b></h5>
