@@ -16,9 +16,13 @@ function show() {
     }
   }
 
-  
+  function tabclick(){
+    console.log("tab got clicked");
+  document.getElementsByClassName("tablink")[0].click();
+}
     
   function openCity(evt, cityName) {
+    document.getElementsByClassName("tablink")[0].click();
     var i, x, tablinks;
     x = document.getElementsByClassName("Proj");
     for (i = 0; i < x.length; i++) {
