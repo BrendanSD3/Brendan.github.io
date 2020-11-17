@@ -16,7 +16,7 @@ function show() {
     }
   }
 
-  document.getElementsByClassName("tablink")[0].click();
+  
     
   function openCity(evt, cityName) {
     var i, x, tablinks;
