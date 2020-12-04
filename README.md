@@ -1,6 +1,5 @@
 Welcome to My Website
-updated site name on 04/12/20 
-<a href="https://Brendan.github.io/">Home Page</a>
+<a href="https://BrendanSD3.github.io/">Home Page</a>
 #### Created by Brendan Wall
 
 
