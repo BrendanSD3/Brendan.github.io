@@ -14,7 +14,23 @@
     <link rel="stylesheet" href="Styles/indexstyle.css">
     <link rel="stylesheet" href="Styles/Navstyle.css">
     <style>
-       
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+.grid > div {
+  background:lightgrey;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.grid > div:hover{
+    opacity:0.5;
+}
+body {
+  margin: 2rem;
+  font: 12px system-ui;
+}
     </style>
     <script>
          // Get the element with id="defaultOpen" and click on it
@@ -68,18 +84,26 @@
                 <p class="line-1">Hello. </p>
                 <p class="line-1 anim-typewriter1">Welcome to my website</p>
             </div>
-           <!--  <div class="custom-control custom-switch">
-                <input type="checkbox" onclick="myFunction()" class="custom-control-input" id="customSwitch1" >
-                <label class="custom-control-label" for="customSwitch1">Toggle Dark Mode</label>
-            </div> -->
-            <br>
-            <!-- <div class="links">
-                <a class="link" id="CVLink" href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
-                <a class="link" href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Formula 1 API using AngularJS</a>
-            </div> -->
+          
         </div>
+        
     </div>
-
+    <div class="grid">
+      <div><img src="csharp.svg" alt="c#" title="Csharp logo" style="width:60px;height:60px;"/>
+         <ul>
+          <li><a href="#">To Do Api</a> </li></ul>
+      </div>
+    <div><h1>Project 2</h1>
+        <p>This is a link to my Python projects</p></div>
+    <div><h1>Project 3</h1>
+        <p>This is a link to my Java projects</p></div>
+    <div><h1>Project 4</h1>
+        <p>This is a link to my PHP projects</p></div>
+    <div><h1>Project 5</h1>
+        <p>This is a link to my Javascript projects</p></div>
+    <div>Placeholder</div>
+    
+    </div>
 </body>
 
 </html>
