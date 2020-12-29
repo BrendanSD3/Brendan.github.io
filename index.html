@@ -32,15 +32,7 @@
     text-decoration: none;
     color:#007bff;
 }
-.zoom {
-  padding: 50px;
-  transition: transform .2s; /* Animation */
- 
-}
 
-.zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
 img{
      width:auto;
     height:60px;
@@ -50,12 +42,31 @@ img{
     animation-duration: 2s; /* don't forget to set a duration! 
 } */
 .image{
-   width: 200px;
-   height:70px;
+   width: 25%;
+   padding:20px;
    
     float:left;
 }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .image {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .image {
+    width: 100%;
+  }
+}
 .image:hover{
     animation:bounce;
     animation-duration: 1s; /* don't forget to set a duration! */
@@ -103,7 +114,7 @@ img{
 
             
             <h2>Projects</h2>
-          <div class="container">
+          <div class=" row container">
                <div class="image">
             <img src="/Images/logos/CSharplogo.png" alt="c#" title="Csharp logo"  />
             </div>
