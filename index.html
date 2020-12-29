@@ -94,6 +94,17 @@ img{
             element.classList.toggle("dark-mode");
         }
             
+        function checkWidth() {
+    if ($(window).width() < 514) {
+        $('#contOuter').addClass('container');
+        $('#contInner').removeClass('container');
+    } else {
+        $('#contOuter').removeClass('container');
+        $('#contInner').addClass('container');
+      }
+}
+
+$(window).resize(checkWidth);
 
     </script>
 
@@ -103,9 +114,9 @@ img{
 
 <body>
     
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-      <div class="container">
+<div id="contOuter">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+   <div id="contInner">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -118,7 +129,7 @@ img{
            
           </div>
         </div>
-      </nav>
+  </nav>
       
     <!-- <div class="topnav">
         <a class="active" id="HomeLink" href="https://brendansd3.github.io">Home</a>
@@ -206,7 +217,7 @@ img{
       
     </div>
     </div>
-    
+    </div>
     </body>
     
     </html>
