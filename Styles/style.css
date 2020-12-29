@@ -4,10 +4,10 @@
 
 /* Global */
 
-html {
+/* html {
     min-height: 100%;
     overflow: hidden;
-}
+} */
 
 body {
     height: calc(100vh - 8em);
