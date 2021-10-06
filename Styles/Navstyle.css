@@ -101,3 +101,40 @@
     color:white;
     background-color:black;
   }
+
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-family: "Roboto", sans-serif
+  }
+  
+  a {
+      color: lightskyblue;
+  }
+  .projdiv {
+      transition: all linear 0.5s;
+      
+      
+    }
+    
+    .ng-hide {
+      height: 0;
+    }
+#project{
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+  display:none;
+}
+.Proj{
+  display:none;
+}
+.certimgs{
+  height:auto;
+  width:100%;
+}
