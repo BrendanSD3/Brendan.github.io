@@ -24,14 +24,7 @@
 <style> 
   </style>
 <script>
-    function ToggleDarkMode() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-        //var el = document.getElementsByClassName("cards");
-        $(".cards").toggleClass("white"); //this goes off
-        $(".cards").toggleClass("dark"); //this goes on 
-        
-    }
+
 </script>
 
 
@@ -60,8 +53,9 @@
 
         app.config(function($routeProvider) {
             $routeProvider
-                .when("/", {
-                    templateUrl: "My_CV.html"
+                .when("/demo", {
+                    templateUrl: "demo.html",
+                    controller:"democtrl"    
                 })
                 
                 .when("/CV", {
@@ -73,7 +67,9 @@
             $scope.title = "Welcome to my CV!";
             document.getElementsByClassName("tablink")[0].click();
         });
-       
+       app.controller("democtrl", function($scope){
+           $scope.title="Demo";
+       })
     </script>
 
 

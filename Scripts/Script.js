@@ -16,7 +16,7 @@ function show() {
     }
   }
 
-    
+    /* For pop up modal for fyp with tabs */
   function openCity(evt, cityName) {
     document.getElementsByClassName("tablink")[0].click();
     var i, x, tablinks;
@@ -31,3 +31,13 @@ function show() {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.classList.add("w3-light-grey");
   }
+
+  /* Toggle Dark mode function */
+  function ToggleDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    //var el = document.getElementsByClassName("cards");
+    $(".cards").toggleClass("white"); //this goes off
+    $(".cards").toggleClass("dark"); //this goes on 
+    
+}
