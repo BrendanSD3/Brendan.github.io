@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/indexstyle.css">
+    <link rel="stylesheet" href="Styles/Navstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+     <style>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
+.grid > div {
+  background:lightgrey;
+  border-radius: 1rem;
+}
+.list-group-item > a{
+    text-decoration: underline;
+    color:#007bff;
+}
+.list-group-item > a:hover{
+    text-decoration: none;
+    color:#007bff;
+}
+
+img{
+     width:auto;
+    height:60px;
+}
+/* img:hover{
+    animation:pulse;
+    animation-duration: 2s; /* don't forget to set a duration! 
+} */
+.image{
+   width: 20%;
+   padding:20px;
+   
+    float:left;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar{
+  width:100%;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .image {
+    width: 50%;
+  }
+}
+.image:hover{
+    animation:bounce;
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
+
+@media screen and (max-width:600px){
+    .image {
+    width: 100%;
+  }
+
+
+  .navbar{
+  margin-bottom:20%;
+}
+
+}
+.row{
+margin-right:168px;
+margin-left:100px;
+
+
+}
+    </style>
+    <script>
+         // Get the element with id="defaultOpen" and click on it
+       // document.getElementById("defaultOpen").click();
+
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+            
+    
+        
+    </script>
+
+
+</head>
+
+
+<body>
+    
+<div id="contOuter" class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+   <div id="contInner" class="container">
+        <a class="navbar-brand" href="#">Welcome, take a look at some projects </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="https://brendansd3.github.io">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="My_CV.html">My CV</a>
+            <a class="nav-item nav-link" href="https://brendansd3.github.io/react-tutorial/">React</a>
+           
+          </div>
+        </div>
+  </nav>
+      
+    <!-- <div class="topnav">
+        <a class="active" id="HomeLink" href="https://brendansd3.github.io">Home</a>
+        <a href="https://brendansd3.github.io/main.html#!/CV">My CV</a>
+        <a href="https://brendansd3.github.io/react-tutorial/">React</a>
+        <a href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Formula 1 API with Angular JS</a>
+        <div class="float-right" style="margin-right:12px;">
+            <a>Toggle Dark Mode</a>
+             <label class="switch" for="customSwitch1" style="color:white;">
+             <input type="checkbox" onclick="myFunction()" class="custom-control-input" id="customSwitch1" >
+             <span class="slider round"></span>
+             </label>
+         </div> 
+      </div> -->
+
+   <!---- <div class="flex-center position-ref full-height">
+        <div class="content">
+    
+            <div class="title m-b-md">
+                <p class="line-1">Hello. </p>
+                <p class="line-1 anim-typewriter1">Welcome to my personal website</p>
+                <p class="line-1 amim-typewriter1">Here are some of the languages I code in.</p>
+              </div>
+          <div class=" row container">
+               <div class="image">
+                 <a href="https://github.com/BrendanSD3/DotNetMVC">
+              <img src="/Images/logos/CSharplogo.png" alt="c#" title="Csharp logo"  /></a>
+            </div>
+            <div class="image">
+            <img src="/Images/logos/python-logo.png" alt="python" title="Python logo"  />
+            </div>
+            <div class="image">
+            <img src="/Images/logos/java.jpeg" alt="Java" title="Java logo"  />
+            </div>
+            <div class="image">
+            <img src="/Images/logos/php.png" alt="php" title="php logo" />
+           </div>
+           <div class="image">
+            <img src="/Images/logos/js.png" alt="javascript" title="javascript logo" />
+            </div>
+            </div>
+        </div>
+---->
+
+            <div class="grid">
+                <div><img src="/Images/logos/csharp.svg" alt="c#" title="Csharp logo" style="width:60px;height:60px;" />
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://github.com/BrendanSD3/ToDoAPI">To Do Api ASP.net core
+                                project</a></li>
+                        <li class="list-group-item"><a href="https://github.com/BrendanSD3/DotNetMVC">Movies project with
+                                crud functionality .NET</a></li>
+                        <li class="list-group-item"><a href="https://github.com/BrendanSD3/3rdYearGroupProj">C# College
+                                group project, college administration system</a></li>
+                    </ul>
+                </div>
+                <div><img src="/Images/logos/python-logo.png" alt="python" title="Python logo" style="height:60px;" />
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://github.com/BrendanSD3/FYP">Final year project using
+                                DJango python framework </a></li>
+                    </ul>
+                </div>
+                <div><img src="/Images/logos/java.jpeg" alt="JAva" title="Java logo" style="height:60px;" />
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://github.com/BrendanSD3/RestAPI_SpringMVC">Spring Rest
+                                API</a></li>
+                    </ul>
+                </div>
+    
+                <div><img src="/Images/logos/php.png" alt="php" title="php logo" style="height:60px;" />
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://github.com/BrendanSD3/LaravelLearning">Laravel php
+                                framework</a></li>
+                    </ul>
+                </div>
+                <div><img src="/Images/logos/react.png" alt="javascript" title="javascript logo" style="height:60px;"/>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://github.com/BrendanSD3/react-tutorial">React Javascript
+                            </a></li>
+                    </ul>
+                </div>
+    
+            </div>
+      
+    </div>
+    </div>
+    </div>
+    </body>
+    
+    </html>

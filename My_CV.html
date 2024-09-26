@@ -55,6 +55,23 @@
 
     </head>
 <body class="w3-light-grey">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Brendan Wall</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="My_CV.html" ></a><span class="sr-only">(current)</span>My CV</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     
 
   
     <!-- Page Container -->
@@ -68,7 +85,7 @@
 
                 <div class="cards white w3-text-grey w3-card-4 w3-margin-bottom ">
                     <div class="w3-display-container w3-margin-bottom ">
-                        <img src="/Images/BrendanWall.jpg" class="animate__animated animate__fadeIn" style="width:100%" alt="Brendan Wall">
+                        <img src="/Images/Whistler.jpg" class="animate__animated animate__fadeIn" style="width:100%" alt="Brendan Wall">
                         <div class="w3-display-topleft w3-container w3-text-white">
                             <h2>Brendan Wall</h2>
                         </div>
@@ -80,33 +97,56 @@
                         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>brendan.wall03@gmail.com</p>
                         <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Email me for contact info</p>
                         <hr>
-
-                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                        <div class="w3-container  ">
+                            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Limerick Institute of Technology</b></h5>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016-2020</h6>
+                                <p>Bachelors Degree in Software Development </p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h5 class="w3-opacity"><b>Pluarlsight/DataCamp Courses</b></h5>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    View my courses and Certs from linkedIn
+                                  </button>
+                    <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         <p>Networking Foundations</p>   
+         <img class="certimgs" src="/Images/courseCerts/Networking Foundations.jpg">
+         <p>FullStack MERN (MongoDB,Express,React,NodeJS)</p>
+         <img class="certimgs" src="/Images/courseCerts/FullStackJS.jpg">
+         <p>Deep Learning for Image Recognition</p>
+         <img class="certimgs" src="/Images/courseCerts/Deep Learning.jpg">
+         <p>Angular ASP.NET API</p>
+         <img class="certimgs" src="/Images/courseCerts/AngularAndDotNETAPI.jpg">
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+    </div>
+                   
+                                <!-- <ul>
+                     <li> <a href="/Images/courseCerts/UnitTestingStrategies and Patterns.pdf">Unit Testing</a></li>
+                     <li><a href="/Images/courseCerts/IntroToSQLCert.pdf">Intro To SQL</a></li>
+                     <li><a href="/Images/courseCerts/ASP.NETCoreMVC.pdf">ASP.NET Core MVC</a></li>
+                    </ul> -->
+                 </div>
+                        </div>
                        
-                        <ul>
-                            <p>Coding/Scripting Languages</p>
-                        <li>C#</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C++</li>
-                        <li>HTML, CSS</li>
-                        <li style="font-weight:bold">Javascript</li>
-                        <ul>                            
-                            <li>React</li><li>Angular</li><li>JQuery</li>
-                        </ul>
-                        <li>SQL</li> 
-                        <li>MongoDB</li>
-                        <li>LINQ</li>
-                        </ul>
-                        <br>
-
-                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i> Non-Code Skills</b></p>
-                        <p>Machine Learning</p>
-                        <p>Azure Cloud</p>
-                        <p>Heroku Cloud</p>
-                        <p>Amazon Cloud (College Module) </p>
-                        <p>Data visualisation (D3.js and Jupyter Notebooks)</p>
-                        <br>
                     </div>
                 </div><br>
 
@@ -118,6 +158,29 @@
 
                 <div class="w3-container w3-card cards white w3-margin-bottom ">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Self Employed </b> Software Consultant / Full Stack Developer</h5>
+                       
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2023 - February 2024</h6>
+                        <ul>
+                            <li>Provided developer support to the customer support team across the Irish timezone (6 AM - 3 PM Vancouver time), conducting remote debugging sessions and resolving customer issues effectively.</li>
+                            <li>Utilized Continuous Integration and Continuous Delivery (CI/CD) practices to deliver timely updates and bug fixes to customers, ensuring consistent platform reliability.</li>
+                            <li>Led the development team through the release process, overseeing the testing of bug fixes, enhancements, and new features for security vulnerabilities and potential issues.</li>
+                            <li>Developed a .NET microservice for integrating ChatGPT's assistant API into the platform. Leveraged a NuGet library to access ChatGPT classes and methods, and created a frontend chatbot interface using JavaScript. The assistant utilized detailed PDF documentation to provide accurate answers to customer queries using the GPT-3.5 model.</li>
+                            <li>Mentored and trained two newly graduated developers, leading a collaborative project to develop a labor scheduler for a client. Gathered functional requirements and ensured the schedule was accessible in a mobile read-only view, with distinct access levels for managers (edit/view) and laborers (view only).</li>
+                            <li>Contributed to ongoing platform improvements by implementing bug fixes and enhancements, increasing overall reliability and usability.</li>
+                            <li>Conducted QA testing of new features before release and documented the features comprehensively for future reference.</li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Junior ATS Developer / Kemp Technologies</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 - September 2019</h6>
+                        <p>As part of the ATS(Automated Tools and Support) team, i was tasked with updating the Internal customer support tools website. The website used the django web framework which utilised python in the backend with angularJS front-end.</p>
+                        <hr>
+                    </div>
+                    
+                    
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Junior ATS Developer / Kemp Technologies</b></h5>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 - September 2019</h6>
@@ -137,7 +200,7 @@
                     </div>
                 </div>
 
-                <div class="w3-container w3-card cards white w3-margin-bottom ">
+                <!-- <div class="w3-container w3-card cards white w3-margin-bottom ">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Limerick Institute of Technology</b></h5>
@@ -157,9 +220,9 @@
                         <h5 class="w3-opacity"><b>LinkedIn Learning</b></h5>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                             View my courses and Certs from linkedIn
-                          </button>
+                          </button> -->
                        <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -189,7 +252,7 @@
                         <hr>
                     </div>
                   
-                </div>
+                </div> -->
                 <br>
                 <div class="w3-container w3-card cards white w3-margin-bottom">
                     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
