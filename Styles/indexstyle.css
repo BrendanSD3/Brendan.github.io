@@ -122,3 +122,21 @@ body {
     background-color: black;
     color: white;
 }
+.row
+{
+  
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+}
+.coming-soon{
+    background-color:lightgrey;
+
+}
+.card{
+    min-height: 300px;
+}
