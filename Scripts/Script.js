@@ -31,3 +31,4 @@ function show() {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.classList.add("w3-light-grey");
   }
+  

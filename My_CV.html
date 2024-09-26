@@ -1,79 +1,87 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html ng-app="myApp">
-    <head>
-<title>Brendan Wall CV</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-<script src="Scripts/Script.js"></script>
 
-<link rel="stylesheet" href="Styles/Navstyle.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-<style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif
-    }
-    
-    a {
-        color: lightskyblue;
-    }
-    .projdiv {
-        transition: all linear 0.5s;
-        
-        
-      }
-      
-      .ng-hide {
-        height: 0;
-      }
-#project{
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
-    display:none;
-}
-.Proj{
-    display:none;
-}
-.certimgs{
-    height:auto;
-    width:100%;
-}
-</style>
+<head>
+    <title>Brendan Wall CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="Scripts/Script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    </head>
+    <link rel="stylesheet" href="Styles/Navstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
+        }
+
+        a {
+            color: lightskyblue;
+        }
+
+        .projdiv {
+            transition: all linear 0.5s;
+
+
+        }
+
+        .ng-hide {
+            height: 0;
+        }
+
+        #project {
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .Proj {
+            display: none;
+        }
+
+        .certimgs {
+            height: auto;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
 <body class="w3-light-grey">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Brendan Wall</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="My_CV.html" ></a><span class="sr-only">(current)</span>My CV</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="My_CV.html"></a><span class="sr-only">(current)</span>My CV</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-     
+    </nav>
 
-  
+
+
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -85,68 +93,95 @@
 
                 <div class="cards white w3-text-grey w3-card-4 w3-margin-bottom ">
                     <div class="w3-display-container w3-margin-bottom ">
-                        <img src="/Images/Whistler.jpg" class="animate__animated animate__fadeIn" style="width:100%" alt="Brendan Wall">
+                        <img src="/Images/Whistler.jpg" class="animate__animated animate__fadeIn" style="width:100%"
+                            alt="Brendan Wall">
                         <div class="w3-display-topleft w3-container w3-text-dark">
                             <h2>Brendan Wall</h2>
                         </div>
                     </div>
 
                     <div class="w3-container  ">
-                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer</p>
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer
+                        </p>
                         <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Kerry, Ireland</p>
-                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>brendan.wall03@gmail.com</p>
-                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Email me for contact info</p>
+                        <p><i
+                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>brendan.wall03@gmail.com
+                        </p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Email me for contact
+                            info</p>
                         <hr>
                         <div class="w3-container  ">
-                            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                            <h2 class="w3-text-grey w3-padding-16"><i
+                                    class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+                            </h2>
                             <div class="w3-container">
                                 <h5 class="w3-opacity"><b>Limerick Institute of Technology</b></h5>
-                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016-2020</h6>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016-2020
+                                </h6>
                                 <p>Bachelors Degree in Software Development </p>
                                 <hr>
                             </div>
                             <div class="w3-container">
-                                <h5 class="w3-opacity"><b>Pluarlsight/DataCamp Courses</b></h5>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                    View my courses and Certs from linkedIn
-                                  </button>
-                    <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-         <p>Networking Foundations</p>   
-         <img class="certimgs" src="/Images/courseCerts/Networking Foundations.jpg">
-         <p>FullStack MERN (MongoDB,Express,React,NodeJS)</p>
-         <img class="certimgs" src="/Images/courseCerts/FullStackJS.jpg">
-         <p>Deep Learning for Image Recognition</p>
-         <img class="certimgs" src="/Images/courseCerts/Deep Learning.jpg">
-         <p>Angular ASP.NET API</p>
-         <img class="certimgs" src="/Images/courseCerts/AngularAndDotNETAPI.jpg">
-         
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-         
-        </div>
-      </div>
-    </div>
-    </div>
-                   
+                                <h5 class="w3-opacity"><b>LinkedIn Learning Certificates</b></h5>
+                                <!-- Button trigger modal -->
+                             
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" id="FullStackJS">FullStack MERN </button>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" id="DeepLearning">DeepLearning</button>
+                                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal" id="Angular">Angular</button>
+
+                                <!-- <p>Networking Foundations</p>
+                                <img class="certimgs" src="/Images/courseCerts/Networking Foundations.jpg">
+                                <p>FullStack MERN (MongoDB,Express,React,NodeJS)</p>
+                                <img class="certimgs" src="/Images/courseCerts/FullStackJS.jpg">
+                                <p>Deep Learning for Image Recognition</p>
+                                <img class="certimgs" src="/Images/courseCerts/Deep Learning.jpg">
+                                <p>Angular ASP.NET API</p>
+                                <img class="certimgs" src="/Images/courseCerts/AngularAndDotNETAPI.jpg"> -->
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <div class="parent">
+                                                    <div class="FullStackJS modal-title">Full Stack with MERN</div>
+                                                    <div class="DeepLearning modal-title">Deep Learning</div>
+                                                    <div class="Angular modal-title">Angular</div>
+                                                </div>
+                                                
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="parent">
+                                                    <div class="FullStackJS">
+                                                        <img class="certimgs" src="/Images/courseCerts/FullStackJS.jpg">
+                                                    </div>
+                                                    <div class="DeepLearning">
+                                                        <img class="certimgs" src="/Images/courseCerts/Deep Learning.jpg">
+                                                    </div>
+                                                    <div class="Angular">
+                                                        <img class="certimgs" src="/Images/courseCerts/Deep Learning.jpg">
+                                                    </div>
+                                               </div>
+                                        </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- <ul>
                      <li> <a href="/Images/courseCerts/UnitTestingStrategies and Patterns.pdf">Unit Testing</a></li>
                      <li><a href="/Images/courseCerts/IntroToSQLCert.pdf">Intro To SQL</a></li>
                      <li><a href="/Images/courseCerts/ASP.NETCoreMVC.pdf">ASP.NET Core MVC</a></li>
                     </ul> -->
-                 </div>
+                            </div>
                         </div>
-                       
+
                     </div>
                 </div><br>
 
@@ -157,45 +192,71 @@
             <div class="w3-twothird">
 
                 <div class="w3-container w3-card cards white w3-margin-bottom ">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
+                    </h2>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Self Employed </b> Software Consultant / Full Stack Developer</h5>
-                       
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2023 - February 2024</h6>
+
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2023 -
+                            February 2024</h6>
                         <ul>
-                            <li>Provided developer support to the customer support team across the Irish timezone (6 AM - 3 PM Vancouver time), conducting remote debugging sessions and resolving customer issues effectively.</li>
-                            <li>Utilized Continuous Integration and Continuous Delivery (CI/CD) practices to deliver timely updates and bug fixes to customers, ensuring consistent platform reliability.</li>
-                            <li>Led the development team through the release process, overseeing the testing of bug fixes, enhancements, and new features for security vulnerabilities and potential issues.</li>
-                            <li>Developed a .NET microservice for integrating ChatGPT's assistant API into the platform. Leveraged a NuGet library to access ChatGPT classes and methods, and created a frontend chatbot interface using JavaScript. The assistant utilized detailed PDF documentation to provide accurate answers to customer queries using the GPT-3.5 model.</li>
-                            <li>Mentored and trained two newly graduated developers, leading a collaborative project to develop a labor scheduler for a client. Gathered functional requirements and ensured the schedule was accessible in a mobile read-only view, with distinct access levels for managers (edit/view) and laborers (view only).</li>
-                            <li>Contributed to ongoing platform improvements by implementing bug fixes and enhancements, increasing overall reliability and usability.</li>
-                            <li>Conducted QA testing of new features before release and documented the features comprehensively for future reference.</li>
+                            <li>Provided developer support to the customer support team across the Irish timezone (6 AM
+                                - 3 PM Vancouver time), conducting remote debugging sessions and resolving customer
+                                issues effectively.</li>
+                            <li>Utilized Continuous Integration and Continuous Delivery (CI/CD) practices to deliver
+                                timely updates and bug fixes to customers, ensuring consistent platform reliability.
+                            </li>
+                            <li>Led the development team through the release process, overseeing the testing of bug
+                                fixes, enhancements, and new features for security vulnerabilities and potential issues.
+                            </li>
+                            <li>Developed a .NET microservice for integrating ChatGPT's assistant API into the platform.
+                                Leveraged a NuGet library to access ChatGPT classes and methods, and created a frontend
+                                chatbot interface using JavaScript. The assistant utilized detailed PDF documentation to
+                                provide accurate answers to customer queries using the GPT-3.5 model.</li>
+                            <li>Mentored and trained two newly graduated developers, leading a collaborative project to
+                                develop a labor scheduler for a client. Gathered functional requirements and ensured the
+                                schedule was accessible in a mobile read-only view, with distinct access levels for
+                                managers (edit/view) and laborers (view only).</li>
+                            <li>Contributed to ongoing platform improvements by implementing bug fixes and enhancements,
+                                increasing overall reliability and usability.</li>
+                            <li>Conducted QA testing of new features before release and documented the features
+                                comprehensively for future reference.</li>
                         </ul>
                         <hr>
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Junior ATS Developer / Kemp Technologies</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 - September 2019</h6>
-                        <p>As part of the ATS(Automated Tools and Support) team, i was tasked with updating the Internal customer support tools website. The website used the django web framework which utilised python in the backend with angularJS front-end.</p>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 -
+                            September 2019</h6>
+                        <p>As part of the ATS(Automated Tools and Support) team, i was tasked with updating the Internal
+                            customer support tools website. The website used the django web framework which utilised
+                            python in the backend with angularJS front-end.</p>
                         <hr>
                     </div>
-                    
-                    
+
+
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Junior ATS Developer / Kemp Technologies</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 - September 2019</h6>
-                        <p>As part of the ATS(Automated Tools and Support) team, i was tasked with updating the Internal customer support tools website. The website used the django web framework which utilised python in the backend with angularJS front-end.</p>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 -
+                            September 2019</h6>
+                        <p>As part of the ATS(Automated Tools and Support) team, i was tasked with updating the Internal
+                            customer support tools website. The website used the django web framework which utilised
+                            python in the backend with angularJS front-end.</p>
                         <hr>
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Bike Mechanic/Car washer/Web Developer / Lynes Rent a bike </b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-                        <p>I worked in a busy start up where I rented bikes, washed cars and I created a webiste for bike rental which increased the volumne of customers hugely. </p>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014
+                        </h6>
+                        <p>I worked in a busy start up where I rented bikes, washed cars and I created a webiste for
+                            bike rental which increased the volumne of customers hugely. </p>
                         <hr>
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Life Guard / Activity leader / YMCA Trout Lodge</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012
+                        </h6>
                         <p>Worked as a lifeguard and program leader for a campsite in Missouri USA. </p><br>
                     </div>
                 </div>
@@ -221,8 +282,8 @@
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                             View my courses and Certs from linkedIn
                           </button> -->
-                       <!-- Modal -->
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Modal -->
+                <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -255,60 +316,77 @@
                 </div> -->
                 <br>
                 <div class="w3-container w3-card cards white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-asterisk fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
                     <div class="w3-container projdiv">
                         <h5 class="w3-opacity"><b>Final Year Project</b></h5>
                         <p>Sketch to Code </p>
-                        <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'">Click here to see an overview</button>
+                        <button class="btn btn-primary"
+                            onclick="document.getElementById('id01').style.display='block'">Click here to see an
+                            overview</button>
                         <hr>
                     </div>
                     <div id="id01" class="w3-modal">
                         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-                         <header class="w3-container w3-blue"> 
-                          <span onclick="document.getElementById('id01').style.display='none'" 
-                          class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-                          <h2>My FYP 2020</h2>
-                         </header>
-                    <div class="w3-bar w3-border-bottom">
-                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Idea')">Idea</button>
-                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Tech')">Tech</button>
-                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Result')">Result</button>
-                       </div>
-                     
-                       <div id="Idea" class="w3-container Proj">
-                        <h1>Idea</h1>
-                        <p> The idea of this project was to speed up the web development process,
-                            how? by using machine learning and object recognition to convert a picture of yout hand drawn sketch to html code. 
-                        </p>
-                       </div>
-                     
-                       <div id="Tech" class="w3-container Proj">
-                        <h1>Tech</h1>
-                        <p>The tech used in this project took lots of trial and error,</p>
-                        <p>Eventually I got it to work by using <b>Google Colab </b> to train a custom machine learning model</p>
-                        <p>I used the <b>YoloV3</b> (You Only Look Once) object detection neural netowrk for trinaing the machine learning model, this is open source and is state of the art for speed </p>
-                        <p>I made my own database of 80 images to train this model as I could not find any online.</p>
-                        <p>To allow a user to use this project I made a website using the <b>Python Django framework</b>, 
-                            I added some features using <b>Javascript and JQuery</b> to the website to allow the user to edit the generated html code by dragging and dropping elements. 
-                        </p>
-                       </div>
-                     
-                       <div id="Result" class="w3-container Proj">
-                        <h1>Result</h1>
-                        <p>Overall the project was a succes, It was able to predict <b>10 html elements with 90% accuracy</b>, the only issue being that the user needs to follow a guide to draw the elements otherwise they wont be recognised and wont be translated to code. </p><br>
-                        <img src="Images/FYP/input99.jpg" alt="this is the input image" class="float-left">
-                        <img src="Images/FYP/predictions99.jpg" alt="this is the resulting predictions" class="float-right">
+                            <header class="w3-container w3-blue">
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
+                                <h2>My FYP 2020</h2>
+                            </header>
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'Idea')">Idea</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'Tech')">Tech</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'Result')">Result</button>
+                            </div>
+
+                            <div id="Idea" class="w3-container Proj">
+                                <h1>Idea</h1>
+                                <p> The idea of this project was to speed up the web development process,
+                                    how? by using machine learning and object recognition to convert a picture of yout
+                                    hand drawn sketch to html code.
+                                </p>
+                            </div>
+
+                            <div id="Tech" class="w3-container Proj">
+                                <h1>Tech</h1>
+                                <p>The tech used in this project took lots of trial and error,</p>
+                                <p>Eventually I got it to work by using <b>Google Colab </b> to train a custom machine
+                                    learning model</p>
+                                <p>I used the <b>YoloV3</b> (You Only Look Once) object detection neural netowrk for
+                                    trinaing the machine learning model, this is open source and is state of the art for
+                                    speed </p>
+                                <p>I made my own database of 80 images to train this model as I could not find any
+                                    online.</p>
+                                <p>To allow a user to use this project I made a website using the <b>Python Django
+                                        framework</b>,
+                                    I added some features using <b>Javascript and JQuery</b> to the website to allow the
+                                    user to edit the generated html code by dragging and dropping elements.
+                                </p>
+                            </div>
+
+                            <div id="Result" class="w3-container Proj">
+                                <h1>Result</h1>
+                                <p>Overall the project was a succes, It was able to predict <b>10 html elements with 90%
+                                        accuracy</b>, the only issue being that the user needs to follow a guide to draw
+                                    the elements otherwise they wont be recognised and wont be translated to code. </p>
+                                <br>
+                                <img src="Images/FYP/input99.jpg" alt="this is the input image" class="float-left">
+                                <img src="Images/FYP/predictions99.jpg" alt="this is the resulting predictions"
+                                    class="float-right">
+                            </div>
+
+                            <div class="w3-container w3-light-grey w3-padding">
+                                <button class="w3-button w3-right w3-white w3-border"
+                                    onclick="document.getElementById('id01').style.display='none'">Close</button>
+                            </div>
+                        </div>
                     </div>
-                     
-                       <div class="w3-container w3-light-grey w3-padding">
-                        <button class="w3-button w3-right w3-white w3-border" 
-                        onclick="document.getElementById('id01').style.display='none'">Close</button>
-                       </div>
-                      </div>
-                     </div>
-               
-                    
-                       <div class="w3-container">
+
+
+                    <div class="w3-container">
                         <h5 class="w3-opacity"><b>Java Spring Rest API </b></h5>
                         <ul><b>Cool things about this project:</b>
                             <li>QR code for each brewery company</li>
@@ -328,20 +406,26 @@
 
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>React CRUD App </b></h5>
-                        <p>The App is now published on my github pages <a href="https://brendansd3.github.io/react-tutorial/index.html">Click here to use it</a> React is a front end technology that is great for user interfaces and it is very quick to develop
+                        <p>The App is now published on my github pages <a
+                                href="https://brendansd3.github.io/react-tutorial/index.html">Click here to use it</a>
+                            React is a front end technology that is great for user interfaces and it is very quick to
+                            develop
                             with. Unlike Angular however it is not a framework.</p>
-                        <p>Link to blog where I found tutorial. <a href="https://www.taniarascia.com/getting-started-with-react/">Blog by Tania Rascia, Great tutorial for getting started </a> </p>
+                        <p>Link to blog where I found tutorial. <a
+                                href="https://www.taniarascia.com/getting-started-with-react/">Blog by Tania Rascia,
+                                Great tutorial for getting started </a> </p>
 
                         <hr>
                     </div>
 
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Angular JS API </b></h5>
-                        <p>Formula one data from ergast API <a href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Click here view</a></p>
+                        <p>Formula one data from ergast API <a
+                                href="https://brendansd3.github.io/AngularJSAPI/drivers.html">Click here view</a></p>
                         <p></p>
                         <hr>
                     </div>
-                
+
                 </div>
                 <!-- End Right Column -->
             </div>
@@ -353,13 +437,53 @@
     </div>
 
     <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <p><a href="https://www.linkedin.com/in/brendan-wall-861235194/">Find me on LinkedIn.<i class="fa fa-linkedin w3-hover-opacity"></i></a></p>
-        <p>Have a look at some of my solutions on Hacker Rank <a href="https://www.hackerrank.com/brendan_wall03">Here</a></p>
+        <p><a href="https://www.linkedin.com/in/brendan-wall-861235194/">Find me on LinkedIn.<i
+                    class="fa fa-linkedin w3-hover-opacity"></i></a></p>
+        <p>Have a look at some of my solutions on Hacker Rank <a
+                href="https://www.hackerrank.com/brendan_wall03">Here</a></p>
 
         <p>Powered by Github Pages</p>
     </footer>
+    <script>
+       // var modal=document.getElementById("exampleModal")
+        $(".btn").click(function () {
+  $(".parent").children().each(function () {
+    $(this).hide();
+  });
+  $(`div.${$(this).attr("id")}`).show();
+});
+    //     $('#exampleModal').on('show.bs.modal', function (event) {
+        
+    //     var button = $(event.relatedTarget) // Button that triggered the modal
+    //     var certType = button.data('certType') // Extract info from data-* attributes
+    //     var certTitle=""
+    //     var imageSource=""
+    //     switch (certType) {
+    //       case "FullStackJS":
+    //           certTitle="FullStack Javascript course with MERN(MongoDB Express React Node)"
+    //           imageSource="Images/courseCerts/FullStack.jpg"
+    //         break;
+        
+    //       default:
+    //         break;
+    //     }
+    
+    
+    //     var modal = $(this)
+    //     modal.find(".modal-title").text(certTitle)
+    //     modal.find('.modal-body .certimgs').src(imageSource)
+    //   })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
-  
 </body>
 
 </html>
